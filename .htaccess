@@ -1,0 +1,7 @@
+RewriteEngine On
+Options -Indexes
+RewriteRule ^sitemap\.xml/?$ sitemap.php 
+RewriteRule ^([a-zA-Z0-9-_()/]+)$ post.php?url=$1 [NC,L]
+RewriteRule ^dev$ index.php [NC,L]
+RewriteRule ^create$ buat-postingan.php [NC,L]
+RewriteRule ^login$ login.php [NC,L]
