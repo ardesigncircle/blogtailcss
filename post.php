@@ -2,7 +2,7 @@
 
 
 include "koneksi.php";
-include_once("parsedown.php");
+include_once("Parsedown.php");
 $url = $_GET['url'];
 $url = preg_replace("/-/", " ", $url);
 $query = "SELECT * FROM postingan WHERE judurl = '$url'";
